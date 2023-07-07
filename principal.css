@@ -1,0 +1,361 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dallahD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.dallahD img {
+  border: 2px solid black;
+}
+
+.container {
+
+    max-width: 1080%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+header {
+
+    background-color: #583B37;
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.logo {
+
+    width: 20%;
+    text-align: center;
+    margin-left: -2%;
+}
+
+.logo img {
+
+    width: 45%;
+    cursor: pointer;
+}
+
+
+.menu {
+    background-color: #583B37;
+    width: 50%;
+}
+
+nav {
+      align-items: center;
+      display: flex;
+      margin-left: -250px;
+}
+
+.menu nav a {
+
+    color: white;
+    text-decoration: none;
+    padding-right: 7%;
+    font-size: 100%;
+    position: relative;
+    
+    
+}
+
+.menu nav a::after {
+
+    content: " ";
+    width: 0%;
+    height: 15%;
+    background-color: #DAA520;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30%;
+}
+
+    /* Estilos globais */
+    #corpoHistória {
+      font-family: Arial, sans-serif;
+      background-color: #F1DABF;
+      padding: 0;
+     
+      
+    }
+    
+    /* Estilos para o contêiner principal */
+    .container2 {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #583B37;
+      height: 149%;
+      margin-top: 10px;
+      max-width: 100%;
+      
+    }
+    
+    .format {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    /* Estilos para o título da seção */
+    .tituloHistória {
+      font-size: 32px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    #descriçãoHistória {
+      color: #FFFFFF;
+      text-align: justify;
+    }
+
+body {
+    background-color: #F1DABF;
+}
+
+#escritadestaque {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.fileira1 {
+    margin-top: 10%;
+}
+
+.fileira2 {
+    margin-top: 10%;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: -124;
+}
+
+/* Estiliza��o para o container dos destaques */
+
+.destaque-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* Estiliza��o para a grade de destaques */
+  .destaque-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /*Regula a distância entre cada elemento da grade destaque*/
+    margin: 130px;
+    margin-left: -100%;
+
+  }
+  
+  /* Estiliza��o para cada item de destaque */
+  .destaque-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+  }
+  
+  /* Estiliza��o para a imagem do destaque */
+  .destaque-item-img img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Estiliza��o para o t�tulo do destaque */
+  .destaque-item-info h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estiliza��o para a descri��o do destaque */
+  .destaque-item-info p {
+    margin-top: 10px;
+  }
+  
+  /* Estiliza��o para o link "Ver Receita" */
+  .destaque-item-info .botao-destaque {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #583B37;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .destaque-item-info {
+    width: 384px;
+
+
+  }
+  
+  .destaque-item-info .botao-destaque:hover {
+    background-color: #462c2cfd;
+    padding: 13px 23px;
+  }
+
+  #perfil-usuario {
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999px;
+    cursor: pointer;
+  }
+  
+
+  /*Rodapé*/
+
+.footer {
+    padding: 0vw 0; /*Define as margens (os espa�os vazio entre o container)o 0vw � o espa�o superior e inferior. J� o 0 � a espa�o da direita a da esquerda*/
+    color:#FFFFFF;
+    background-color:#583B37;
+}
+
+.container {
+    max-width: 95%; /*Defina a largura m�xima*/
+    margin: 0 auto; /*Define as margens ao redor do elemento conteiner:0-para superior e inferior e auto-para as margens da direita e da esquerda que ser�o automaticamente ajustadas*/
+    display: flex;/*Torna o container flex�vel*/
+    justify-content: space-between; /*Deixa o espa�o entre cada t�tulo igual*/
+    flex-wrap: wrap; /*Controla como os elementos flex�veis se ajustam em uma �nicaO valor wrap permite que os elementos sejam dispostos em v�rias linhas, se necess�rio, para evitar a quebra do layout */
+}
+
+.footer-logo img {
+    width: 7.5rem; /*Largura*/
+    height: auto; /*Preserva a propor��o original da imagem*/
+
+}
+
+.footer-informação,
+.footer-social,
+.footer-pagamento {
+    flex-basis: 25%; /*Indica a largura inicial*/
+    margin-bottom: 3%; /*Est� definindo a margem inferior*/
+}
+
+.footer-titulo1 {
+    font-size: 122%;
+    margin-bottom: 1%; /*define a margem inferior*/
+    margin-top: 28%;
+    
+}
+
+.footer-titulo {
+    font-size: 122%;
+    margin-bottom: 1%; /*define a margem inferior*/
+    
+}
+
+.social-links li {
+    display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+    margin-right: 10%; /*Margem da direita*/
+}
+
+.social-links a {
+    color: #333333;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+
+.formas-de-pagamento li {
+    display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+    margin-right: 10%; /*Margem da direita*/
+}
+
+.formas-de-pagamento a {
+    color: #333333;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+
+#direitos {
+    text-align: center;
+}
+/*Estilos responsivos para dispositivos móveis*/
+@media screen and (max-width: 950px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+
+    }
+  
+    .logo {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .menu {
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    nav {
+      margin-left: 0;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    .menu nav a {
+      padding-right: 0;
+    }
+  
+    .destaque-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 9%;
+      margin-right: 9%;
+    }
+  
+    .destaque-item-info {
+      width: 100%;
+    }
+
+    .footer-logo img {
+      margin-left: 110%;
+    }
+    .footer-informação {
+      margin-top: -25%;
+    }
+
+    .footer-informação,
+    .footer-social,
+    .footer-pagamento {
+      flex-basis: 100%; /* Ocupa toda a largura */
+    }
+
+    .social-links {
+      font-size: 100%;
+    }
+  }
+  

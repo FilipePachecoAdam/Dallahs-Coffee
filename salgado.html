@@ -1,0 +1,432 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Dallah's Coffee</title>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/d4d4cad938.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+
+    max-width: 1080%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+
+    background-color: #583B37;
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.logo {
+
+    width: 25%;
+    text-align: center;
+}
+
+.logo img {
+
+    width: 25%;
+    cursor: pointer;
+}
+
+.sociais {
+    
+    width: 25%;
+}
+
+.menu {
+    background-color: #583B37;
+    width: 50%;
+}
+
+.menu nav a {
+
+    color: white;
+    text-decoration: none;
+    padding-right: 7%;
+    font-size: 100%;
+    position: relative;
+}
+
+nav {
+    margin-left: -41%;}
+
+.menu nav a::after {
+
+    content: " ";
+    width: 0%;
+    height: 15%;
+    background-color: #DAA520;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30%;
+}
+
+.sociais button{
+
+    width: 30%;
+    height: 30%;
+    background-color:  #583B37;
+    border: none;
+    margin-right: -53%;
+    cursor: pointer; 
+}
+
+.sociais button i {
+
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #F1DABF;
+    background-color: #f1dabf;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-top: -20%;
+      }
+  
+  
+      h1 {
+        font-family: "Poppys Black", sans-serif;
+        font-size: 36px;
+        color: #583B37;
+        text-align: center;
+        margin-bottom: 45px;
+        margin-top: 45px;
+      }
+  
+      .snack-list-container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .snack-item {
+        flex-shrink: 0;
+        width: 400px;
+        height: 400px;
+        background-color: #583B37;
+        border-radius: 10px;
+        margin-right: 20px;
+        color: #f1dabf;
+        text-align: center;
+        padding: 20px;
+        scroll-snap-align: start;
+        cursor: pointer;
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: var(--h1) var(--v1) var(--blur1) var(--color-dark), 
+        var(--h2) var(--v2) var(--blur2) var(--color-light);
+      }
+  
+      .snack-item img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+  
+      .snack-item h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      .snack-item p {
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+  
+      .scrollbar {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background-color: #f1dabf;
+        margin-top: 20px;
+      }
+  
+      .scrollbar-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #583B37;
+        transition: width 0.2s;
+      }
+  
+      .volta {
+      text-decoration: none;
+      color: #f1dabf;
+      display: flex;
+      justify-content: center;
+  
+      }
+
+      .footer {
+        padding: 0vw 0; /*Define as margens (os espa�os vazio entre o container)o 0vw � o espa�o superior e inferior. J� o 0 � a espa�o da direita a da esquerda*/
+        color:#FFFFFF;
+        background-color:#583B37;
+    }
+    
+    .container {
+        max-width: 95%; /*Defina a largura m�xima*/
+        margin: 0 auto; /*Define as margens ao redor do elemento conteiner:0-para superior e inferior e auto-para as margens da direita e da esquerda que ser�o automaticamente ajustadas*/
+        display: flex;/*Torna o container flex�vel*/
+        justify-content: space-between; /*Deixa o espa�o entre cada t�tulo igual*/
+        flex-wrap: wrap; /*Controla como os elementos flex�veis se ajustam em uma �nicaO valor wrap permite que os elementos sejam dispostos em v�rias linhas, se necess�rio, para evitar a quebra do layout */
+    }
+    
+    .footer-logo img {
+        width: 7.5rem; /*Largura*/
+        height: auto; /*Preserva a propor��o original da imagem*/
+    
+    }
+    
+    .footer-informação,
+    .footer-social,
+    .footer-pagamento {
+        flex-basis: 25%; /*Indica a largura inicial*/
+        margin-bottom: 3%; /*Est� definindo a margem inferior*/
+    }
+    
+    .footer-titulo1 {
+        font-size: 122%;
+        margin-bottom: 1%; /*define a margem inferior*/
+        margin-top: 28%;
+        
+    }
+    
+    .footer-titulo {
+        font-size: 122%;
+        margin-bottom: 1%; /*define a margem inferior*/
+        
+    }
+    
+    .social-links li {
+        display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+        margin-right: 10%; /*Margem da direita*/
+    }
+    
+    .social-links a {
+        color: #333333;
+        font-size: 2vw;
+        color: #FFFFFF;
+    }
+    
+    .formas-de-pagamento li {
+        display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+        margin-right: 10%; /*Margem da direita*/
+    }
+    
+    .formas-de-pagamento a {
+        color: #333333;
+        font-size: 2vw;
+        color: #FFFFFF;
+    }
+    
+    #direitos {
+        text-align: center;
+    }
+    /*Estilos responsivos para dispositivos móveis*/
+    @media screen and (max-width: 950px) {
+        .container {
+          flex-direction: column;
+          align-items: flex-start;
+          display: flex;
+          flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+    
+        }
+      
+        .logo {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      
+        .menu {
+          width: 100%;
+          text-align: center;
+          margin-right: 20px;
+        }
+      
+        nav {
+          margin-left: 0;
+          text-align: center;
+          margin-right: 20px;
+        }
+      
+        .menu nav a {
+          padding-right: 0;
+        }
+      
+        .destaque-grid {
+          grid-template-columns: repeat(1, 1fr);
+          margin-left: 9%;
+          margin-right: 9%;
+        }
+      
+        .destaque-item-info {
+          width: 100%;
+        }
+    
+        .footer-logo img {
+          margin-left: 110%;
+        }
+        .footer-informação {
+          margin-top: -25%;
+        }
+    
+        .footer-informação,
+        .footer-social,
+        .footer-pagamento {
+          flex-basis: 100%; /* Ocupa toda a largura */
+        }
+    
+        .social-links {
+          font-size: 100%;
+        }
+      }
+      
+      .snack-list-container {
+        margin-bottom: 30px;
+      }
+  </style>
+</head>
+<body>
+  <header> <!--Cabeçario-->
+    <div class="container">
+      <div class="logo"> <img src="Logo.png" width="40%"></div>
+      <div class="menu">
+        <nav> <!--Serve para agrupar uma lista de links para outras partes do site-->
+          <a href="#">INÍCIO</a>
+          <a href="#footer">CONTATOS</a>
+          <a href="#footer">SUPORTE</a>
+          <a href="form.html">LOGIN</a>
+          <a href="Principal.html">VOLTAR</a>
+        </nav>
+      </div>
+
+
+    </div>
+  </header>
+  <h1>Nossos Salgados</h1>
+  <div class="snack-list-container">
+    <div class="snack-item">
+      <img src="pastel.jpg" alt="Pastel de Queijo">
+      <h2>Pastel de Queijo</h2>
+      <p>Delicioso pastel recheado com queijo derretido, crocante por fora e macio por dentro.</p>
+    </div>
+    <div class="snack-item">
+      <img src="enroladinho.jpg" alt="Enroladinho de Salsicha">
+      <h2>Enroladinho de Salsicha</h2>
+      <p>Uma opção clássica de salgado, com uma salsicha envolvida em uma massa macia e crocante.</p>
+    </div>
+    <div class="snack-item">
+      <img src="coxinha.jpg" alt="Coxinha de Frango">
+      <h2>Coxinha de Frango</h2>
+      <p>Uma delícia brasileira, com massa de batata recheada com frango desfiado e temperado.</p>
+    </div>
+    <div class="snack-item">
+      <img src="empada.jpg" alt="Empada de Palmito">
+      <h2>Empada de Palmito</h2>
+      <p>Uma empada deliciosa, com recheio de palmito cremoso, envolto em uma massa leve e crocante.</p>
+    </div>
+    <div class="snack-item">
+      <img src="quibe.jpg" alt="Quibe Assado">
+      <h2>Quibe Assado</h2>
+      <p>Uma versão assada do tradicional quibe, preparado com carne moída temperada e especiarias.</p>
+    </div>
+    <div class="snack-item">
+      <h2>Em breve mais opções</h2>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  <div class="scrollbar">
+    <div class="scrollbar-thumb"></div>
+  </div>
+
+  <script>
+    var snackListContainer = document.querySelector('.snack-list-container');
+    var scrollbarThumb = document.querySelector('.scrollbar-thumb');
+
+    snackListContainer.addEventListener('scroll', function() {
+      var scrollPercentage = (snackListContainer.scrollLeft / (snackListContainer.scrollWidth - snackListContainer.clientWidth)) * 100;
+      scrollbarThumb.style.width = scrollPercentage + '%';
+    });
+  </script>
+
+ <!--Início do Rodapé-->
+
+ <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-logo">
+      <img src="Logo.png">
+    </div>
+
+    <div class="footer-informação">
+      <h3 class="footer-titulo1">Sobre nós:</h3>
+      <p>A Dallah's Coffee é uma cafeteria gourmet dedicada a proporcionar a você uma experiência única de café. Com grãos selecionados e preparo especializado, cada xícara é uma explosão de sabores e aromas envolventes. Desfrute de momentos de prazer e sofisticação na Dallah's Coffee.</p>
+    </div>
+
+    <div class="footer-social">
+      <h3 class="footer-titulo">Redes Sociais:</h3>
+      <ul class="social-links">
+        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-pagamento">
+      <h3 class="footer-titulo">Formas de pagamento:</h3>
+      <ul class="formas-de-pagamento">
+        <li><a href="#" target="_blank"><i class="fab fa-cc-mastercard"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-cc-visa"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-cc-amex"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-pix"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <p id="direitos">&copy; 2023 Cafeteria Dallah's Coffee. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+
