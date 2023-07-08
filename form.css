@@ -1,0 +1,223 @@
+.login-tab {
+    display: inline-block;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 3px;
+    }
+    
+    .left-area {
+    width: 35%;
+    height: 100%;
+    background-color:#f1dabf;
+    display: Inline-block;
+    margin-top: 0px; 
+    
+    }
+    
+    .right-area {
+    width: 65%;
+    height: 100%;
+    background-color: #583B37;
+    display: inline-block;
+    margin-top: 0px;
+    }
+    
+    .login-content {
+    
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: xx-large;
+    
+    }
+    
+    .Bem-vindo {
+    margin-top: 20px;
+    text-align: center;
+    color: #583B37;
+    font-size: xx-large;
+    }
+    
+    #Frase-login {
+    color:  #583B37;
+    text-align: center;
+    margin-top: -5%;
+    }
+    
+    #Palavra-aqui {
+    text-align: center;
+    color: #583B37;
+    font-size: 20px;
+    margin-top: 134px;
+    }
+    
+    body {
+    background-color: #ecc9a0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    form {
+    margin-top: 133px;
+    margin-left: 123px;
+    }
+    
+    .form {
+    width: 63%;
+    height: 18px;
+    padding: 10px;
+    border: 1px;
+    resize: none;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    background-color: #F2DAC0;
+    }
+    
+    .botaoCadastrar {
+    background-color: #F2DAC0;
+    border-radius: 70px;
+    border: 2px solid #583B37;
+    width: 141px;
+    height: 46px;
+    font-family: 'Poppins', sans-serif;
+    color: #583B37;
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    /* Estilos do botão */
+    
+    }
+    
+    .right-area {
+    align-items: center;
+    }
+    
+    h1 {
+    text-align: center;
+    color: #ecc9a0;
+    }
+    
+    #PalavraFinal{
+    color: #BFA473;
+    text-align: center;
+    margin-top: 54%;
+    }
+    
+    #descrição-dados {
+    text-align: center;
+    color: #F2DAC0;
+    }
+    
+    .ìcones {
+        display: flex;
+        flex-direction: column;
+        color: #f1dabf; 
+        font-size: 30px; 
+        margin-left: -34%;
+        margin-top: 10%;
+    }
+    
+    i {
+    padding-bottom: 20px; /* Espaçamento entre os ícones */
+    }
+    
+    #descrição-Final {
+    color: #8B7053;
+    margin-top: 31%;
+    text-align: center;
+    margin-left: 4%;
+    }
+    @media screen and (max-width: 950px) {
+    /* Adicione o seguinte código CSS ao seu estilo existente */
+    
+    /* Ajustes gerais */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .login-tab {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      padding: 7px;
+    }
+    
+    .left-area {
+      width: 100%;
+      margin: 20px 0;
+    }
+    
+    .Frase-login {
+        font-size: 16px; 
+        margin-top: 0;
+    }
+    
+    .right-area {
+      width: 100%;
+      margin-top: 20px;
+      margin: 6px 0;
+    }
+    
+    .botaoCadastrar {
+    
+    position: absolute;
+    top: 38%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    }
+    
+    h1 {
+      margin-top: 0;
+    }
+    
+    #PalavraFinal {
+      margin-top: 127px;
+      text-align: center;
+    }
+    
+    #descrição-dados {
+      margin-bottom: 0;
+    }
+    
+    .ìcones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 673px;
+      margin-left: -300px;
+    }
+    
+    form {
+        margin-top: 90px;
+        margin-left: 136px;
+    }
+    
+    i {
+      margin: 5px;
+      margin-left: -10px;
+      margin-top: 2px;
+    }
+    
+    #descrição-Final {
+      margin-top: 918px;
+      margin-left: 20;
+      color: #ffffff00
+    }
+    }
+    /* Media query para telas menores */
+    
